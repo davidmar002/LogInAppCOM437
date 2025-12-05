@@ -21,7 +21,7 @@
             android:textSize="28sp"
             android:textColor="@color/white"
             android:textStyle="bold"
-            android:layout_marginBottom="24dp"/>
+            android:layout_marginBottom="24dp" />
 
         <EditText
             android:id="@+id/email_input"
@@ -30,10 +30,11 @@
             android:hint="Correo electrónico"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
             android:background="@drawable/rounded_corner"
             android:padding="18dp"
             android:inputType="textEmailAddress"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp" />
 
         <EditText
             android:id="@+id/password_input"
@@ -42,10 +43,11 @@
             android:hint="Contraseña"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
             android:background="@drawable/rounded_corner"
             android:padding="18dp"
             android:inputType="textPassword"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp" />
 
         <EditText
             android:id="@+id/confirm_password_input"
@@ -54,10 +56,11 @@
             android:hint="Confirmar contraseña"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
+            android:textCursorDrawable="@null"
             android:background="@drawable/rounded_corner"
             android:padding="18dp"
             android:inputType="textPassword"
-            android:layout_marginBottom="24dp"/>
+            android:layout_marginBottom="24dp" />
 
         <Button
             android:id="@+id/register_btn"
@@ -67,7 +70,9 @@
             android:background="@color/white"
             android:textColor="#3B84F1"
             android:padding="18dp"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            android:layout_marginTop="8dp" />
 
     </LinearLayout>
+
 </RelativeLayout>

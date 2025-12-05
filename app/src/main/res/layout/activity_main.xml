@@ -9,63 +9,76 @@
     android:gravity="center"
     android:padding="16dp"
     tools:context=".MainActivity">
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical">
-        
+
         <ImageView
             android:layout_width="160dp"
             android:layout_height="160dp"
-            android:src="@drawable/icon_account_circle"
-            />
-        
+            android:src="@drawable/icon_account_circle" />
+
+        <!-- Email -->
         <EditText
+            android:id="@+id/username_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:hint="Username"
+            android:hint="Correo electrónico"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:textSize="20sp"
             android:background="@drawable/rounded_corner"
             android:padding="18dp"
-            android:inputType="text"
-            android:id="@+id/username_input" />
+            android:inputType="textEmailAddress" />
 
+        <!-- Password -->
         <EditText
+            android:id="@+id/password_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="Password"
+            android:hint="Contraseña"
             android:textColor="@color/white"
             android:textColorHint="@color/white"
             android:textSize="20sp"
             android:background="@drawable/rounded_corner"
             android:padding="18dp"
-            android:inputType="textPassword"
-            android:id="@+id/password_input" />
-        
+            android:inputType="textPassword" />
+
+        <!-- Login button -->
         <Button
+            android:id="@+id/login_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Iniciar sesión"
             android:background="@color/white"
             android:textColor="#3B84F1"
             android:padding="18dp"
             android:layout_marginTop="32sp"
-            android:textSize="20sp"
-            android:id="@+id/login_btn"/>
-        
+            android:textSize="20sp" />
+
+        <!-- Register link -->
+        <TextView
+            android:id="@+id/register_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿No tienes cuenta? Regístrate"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="24dp" />
+
+        <!-- Social Login (solo estético) -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Social Login"
             android:textSize="18sp"
             android:textColor="@color/white"
-            android:layout_marginTop="32dp"/>
+            android:layout_marginTop="32dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -79,17 +92,24 @@
                 android:layout_height="64dp"
                 android:layout_margin="16dp"
                 android:id="@+id/facebook_btn"
-                android:src="@drawable/facebook"/>
+                android:src="@drawable/facebook" />
 
             <ImageView
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_margin="16dp"
                 android:id="@+id/instagram_btn"
-                android:src="@drawable/instagram"/>
+                android:src="@drawable/instagram" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="16dp"
+                android:id="@+id/linkedin_btn"
+                android:src="@drawable/linkedin" />
+
         </LinearLayout>
-        
+
     </LinearLayout>
 
-    
 </RelativeLayout>
